@@ -1,0 +1,38 @@
+{
+  "name": "MyApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "ios:stag": "react-native run-ios --configuration 'DebugStaging' --scheme 'MyAppStaging'",
+    "ios:stag-release": "react-native run-ios --configuration 'ReleaseStaging' --scheme 'MyAppStaging'",
+    "ios:prod": "react-native run-ios --configuration 'DebugProduction' --scheme 'MyAppProduction'",
+    "ios:prod-release": "react-native run-ios --configuration 'ReleaseProduction' --scheme 'MyAppProduction'",
+    "android:stag": "react-native run-android  --variant=stagingdebug --appIdSuffix staging",
+    "android:stag-release": "react-native run-android  --variant=stagingrelease --appIdSuffix staging",
+    "android:prod": "react-native run-android  --variant=productiondebug ",
+    "android:prod-release": "react-native run-android  --variant=productionrelease "
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.67.3",
+    "react-native-config": "^1.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/runtime": "^7.17.7",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "metro-react-native-babel-preset": "^0.69.0",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
